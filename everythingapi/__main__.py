@@ -97,7 +97,7 @@ def main():
     load_dotenv()
     # ai = OpenAI(api_key=os.environ["OPENAI_TOKEN"])
     ai = Groq(api_key=os.environ["GROQ_TOKEN"])
-    app.run()
+    app.run(host="0.0.0.0")
 
 
 if __name__ == "__main__":
